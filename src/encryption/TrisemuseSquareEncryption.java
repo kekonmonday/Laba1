@@ -22,6 +22,7 @@ public class TrisemuseSquareEncryption extends Encryption {
         super(TAG, text, key);
     }
 
+    @Override
     public String execute() {
         Generator generator = GeneratorFactory.getGeneratorWithShift(Generator.ALPHABET, 0);
         List<List> cipherReplacement = new ArrayList<>();

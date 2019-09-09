@@ -14,6 +14,7 @@ public class LosungEncryption extends Encryption {
         super(TAG, text, key);
     }
 
+    @Override
     public String execute() {
         Generator generator = GeneratorFactory.getGeneratorWithShift(Generator.ALPHABET, 0);
         ArrayList<Character> cipherReplacement = new ArrayList<>();

@@ -12,6 +12,7 @@ public class PolibianSquareEncryption extends Encryption {
         super(TAG, text, null);
     }
 
+    @Override
     public String execute() {
         StringBuilder result = new StringBuilder();
         List<List<Character>> square = EncryptionHelper.getSquare();

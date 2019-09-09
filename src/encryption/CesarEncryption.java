@@ -12,6 +12,7 @@ public class CesarEncryption extends Encryption {
         super(TAG, text, key);
     }
 
+    @Override
     public String execute() {
         Generator generator = GeneratorFactory.getGeneratorWithShift(Generator.ALPHABET, Integer.valueOf(getKey()));
         Character[] cipherReplacement = new Character[Generator.ALPHABET.length()];

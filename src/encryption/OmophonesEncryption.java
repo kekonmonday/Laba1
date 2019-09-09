@@ -14,6 +14,7 @@ public class OmophonesEncryption extends Encryption {
         super(TAG, text, null);
     }
 
+    @Override
     public String execute() {
         Generator generator = GeneratorFactory.getGeneratorWithShift(Generator.ALPHABET, 0);
         StringBuilder s = new StringBuilder();

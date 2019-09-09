@@ -26,7 +26,7 @@ public class VisionerEncryption extends Encryption {
         this.key = newKey.substring(0, text.length());
     }
 
-
+    @Override
     public String execute() {
         Generator generator = GeneratorFactory.getGeneratorWithShift(Generator.ALPHABET, 0);
         StringBuilder builder = new StringBuilder();

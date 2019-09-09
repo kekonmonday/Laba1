@@ -21,6 +21,7 @@ public class PlayfairEncryption extends Encryption {
         super(TAG, text, key);
     }
 
+    @Override
     public String execute() {
         Generator generator = GeneratorFactory.getGeneratorWithShift(Generator.ALPHABET, 0);
         StringBuilder result = new StringBuilder();
