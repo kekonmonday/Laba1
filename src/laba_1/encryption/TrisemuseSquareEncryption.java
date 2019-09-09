@@ -1,9 +1,9 @@
-package encryption;
+package laba_1.encryption;
 
-import generator.Generator;
-import generator.GeneratorFactory;
-import helper.ConsoleHelper;
-import helper.EncryptionHelper;
+import laba_1.generator.Generator;
+import laba_1.generator.GeneratorFactory;
+import laba_1.helper.ConsoleHelper;
+import laba_1.helper.EncryptionHelper;
 
 import java.util.ArrayList;
 import java.util.List;

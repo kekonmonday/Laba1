@@ -1,4 +1,4 @@
-package helper;
+package laba_1.helper;
 
 import com.sun.istack.internal.Nullable;
 

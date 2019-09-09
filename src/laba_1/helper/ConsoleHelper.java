@@ -1,6 +1,6 @@
-package helper;
+package laba_1.helper;
 
-import encryption.Encryption;
+import laba_1.encryption.Encryption;
 
 import java.util.ArrayList;
 import java.util.Arrays;

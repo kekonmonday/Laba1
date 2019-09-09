@@ -1,5 +1,7 @@
-import encryption.*;
-import helper.ConsoleHelper;
+package laba_1;
+
+import laba_1.encryption.*;
+import laba_1.helper.ConsoleHelper;
 
 public class Main {
 

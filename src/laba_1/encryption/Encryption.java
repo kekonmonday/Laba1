@@ -1,7 +1,7 @@
-package encryption;
+package laba_1.encryption;
 
-import helper.ConsoleHelper;
 import jdk.nashorn.internal.ir.annotations.Immutable;
+import laba_1.helper.ConsoleHelper;
 
 @Immutable
 public abstract class Encryption {

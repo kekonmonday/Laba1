@@ -1,6 +1,6 @@
-package encryption;
+package laba_1.encryption;
 
-import helper.EncryptionHelper;
+import laba_1.helper.EncryptionHelper;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class PolibianSquareEncryption extends Encryption {
         StringBuilder result = new StringBuilder();
         List<List<Character>> square = EncryptionHelper.getSquare();
         for (Character character : getText().toCharArray()) {
-            for (int i = 0; i < 6; i ++) {
+            for (int i = 0; i < 6; i++) {
                 for (int j = 0; j < 6; j++) {
                     Character squareCharacter = square.get(i).get(j);
                     if (character.equals(squareCharacter)) {

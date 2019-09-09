@@ -1,9 +1,9 @@
-package encryption;
+package laba_1.encryption;
 
-import generator.Generator;
-import generator.GeneratorFactory;
-import helper.ConsoleHelper;
-import helper.EncryptionHelper;
+import laba_1.generator.Generator;
+import laba_1.generator.GeneratorFactory;
+import laba_1.helper.ConsoleHelper;
+import laba_1.helper.EncryptionHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -88,23 +88,23 @@ public class PlayfairEncryption extends Encryption {
             assert secondIndex != null;
             if (firstIndex[0] == secondIndex[0]) {
                 if (firstIndex[1] != 0 && secondIndex[1] != 0) {
-                    newFirstIndex = new int[] {firstIndex[0],  firstIndex[1] - 1};
-                    newSecondIndex = new int[] {secondIndex[0],  secondIndex[1] - 1};
+                    newFirstIndex = new int[]{firstIndex[0], firstIndex[1] - 1};
+                    newSecondIndex = new int[]{secondIndex[0], secondIndex[1] - 1};
                 } else if (firstIndex[1] != 7 && secondIndex[1] != 7) {
-                    newFirstIndex = new int[] {firstIndex[0],  firstIndex[1] + 1};
-                    newSecondIndex = new int[] {secondIndex[0],  secondIndex[1] + 1};
+                    newFirstIndex = new int[]{firstIndex[0], firstIndex[1] + 1};
+                    newSecondIndex = new int[]{secondIndex[0], secondIndex[1] + 1};
                 }
             } else if (firstIndex[1] == secondIndex[1]) {
                 if (firstIndex[0] != 0 && secondIndex[0] != 0) {
-                    newFirstIndex = new int[] {firstIndex[0] - 1,  firstIndex[1]};
-                    newSecondIndex = new int[] {secondIndex[0] - 1,  secondIndex[1]};
+                    newFirstIndex = new int[]{firstIndex[0] - 1, firstIndex[1]};
+                    newSecondIndex = new int[]{secondIndex[0] - 1, secondIndex[1]};
                 } else if (firstIndex[0] != 3 && secondIndex[0] != 3) {
-                    newFirstIndex = new int[] {firstIndex[0] + 1,  firstIndex[1]};
-                    newSecondIndex = new int[] {secondIndex[0] + 1,  secondIndex[1]};
+                    newFirstIndex = new int[]{firstIndex[0] + 1, firstIndex[1]};
+                    newSecondIndex = new int[]{secondIndex[0] + 1, secondIndex[1]};
                 }
             } else {
-                newFirstIndex = new int[] {firstIndex[0], secondIndex[1]};
-                newSecondIndex = new int[] {secondIndex[0], firstIndex[1]};
+                newFirstIndex = new int[]{firstIndex[0], secondIndex[1]};
+                newSecondIndex = new int[]{secondIndex[0], firstIndex[1]};
             }
             assert newFirstIndex != null;
             result.append(cipherReplacement.get(newFirstIndex[0]).get(newFirstIndex[1])).append(cipherReplacement.get(newSecondIndex[0]).get(newSecondIndex[1])).append(" ");

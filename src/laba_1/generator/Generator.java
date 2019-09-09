@@ -1,4 +1,4 @@
-package generator;
+package laba_1.generator;
 
 public abstract class Generator {
 
